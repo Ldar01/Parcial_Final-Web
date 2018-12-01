@@ -3,7 +3,7 @@ extends layout
 block content
   .contenido
     h1 Administrador de abogado
-    form(action="/", method="post")
+    form(action="/Abogados", method="post")
       input#nombre(type="text", name="nombre", placeholder="Nombre")
       input#especialidad(type="text", name="especialidad", placeholder= "Especialidad")
       input#casos(type="text", name="casos", placeholder= "Casos ganados")
@@ -11,10 +11,12 @@ block content
     .tabla
       table
         thead
-          tr
+          tr#fila1
             td#numero #
             td Nombre
             td Especialidad
             td Casos
-        tbody
+            td Opcioones
+        tbody#tabla2
 
+  
