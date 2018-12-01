@@ -1,19 +1,20 @@
 extends layout
 
 block content
-  h1 Administrador de abogado
-  form(action="#", method="post")
-    input#nombre(type="text", name="nombre", placeholder="Nombre")
-    input#especialidad(type="text", name="especialidad", placeholder= "Especialidad")
-    input#casos(type="text", name="casos", placeholder= "Casos ganados")
-    input(type="submit", value="Guardar")
-  .tabla
-    table
-      thead
-        tr
-          td #
-          td Nombre
-          td Especialidad
-          td Casos
-      tbody
+  .contenido
+    h1 Administrador de abogado
+    form(action="/", method="post")
+      input#nombre(type="text", name="nombre", placeholder="Nombre")
+      input#especialidad(type="text", name="especialidad", placeholder= "Especialidad")
+      input#casos(type="text", name="casos", placeholder= "Casos ganados")
+      input#guardar(type="submit", value="Guardar")
+    .tabla
+      table
+        thead
+          tr
+            td#numero #
+            td Nombre
+            td Especialidad
+            td Casos
+        tbody
 

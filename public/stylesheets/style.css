@@ -1,8 +1,34 @@
+:root{
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+h1{
+  font-family: 'Sedgwick Ave', cursive;
+  font-size: 4em;
+  text-align: center;
 }
+
+.contenido{
+  height: 80vh;
+}
+
+#numero{
+  width: 50px;
+}
+
+tr{
+  height: 4em;
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
+}
+
+td{
+  width: 300px;
+  text-align: center;
+}
+
