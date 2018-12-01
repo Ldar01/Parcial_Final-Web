@@ -15,7 +15,7 @@ module.exports.getAll = function(req, res){
 
 module.exports.getOne = function(req, res){
     if(req.params.id){
-        registroModel.findOne(req.params.id, function(err, registro){
+        registroModel.findById(req.params.id, function(err, registro){
             if(err){
                 res.status(500);
                 return res.json({"Ok": false, error: err});
